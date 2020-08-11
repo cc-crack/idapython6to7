@@ -1,3 +1,4 @@
+#/usr/bin/venv python3
 import sys
 
 def rename_vars():
@@ -14,10 +15,10 @@ def rename_vars():
 def create_table():
     api_list = load_apis()
     # generate table
-    print "| Old           | New           |"
-    print "| ------------- |:-------------:|"
+    print("| Old           | New           |")
+    print("| ------------- |:-------------:|")
     for old, new in api_list:
-        print "| %s           | %s           |" % (old, new)
+        print("| %s           | %s           |" % (old, new))
 
 def load_apis():
     new_old_apis = [
